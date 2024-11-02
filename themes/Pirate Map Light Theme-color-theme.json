@@ -2,19 +2,13 @@
 	"name": "Pirate Map Light Theme",
 	"tokenColors": [
 		{
-			"settings": {
-				"foreground": "#657b83"
-			}
-		},
-		{
+			"name": "Variable",
 			"scope": [
-				"meta.embedded",
-				"source.groovy.embedded",
-				"string meta.image.inline.markdown",
-				"variable.legacy.builtin.python"
+				"variable.language",
+				"variable.other"
 			],
 			"settings": {
-				"foreground": "#657B83"
+				"foreground": "#3d4a4e"
 			}
 		},
 		{
@@ -36,29 +30,22 @@
 			"name": "Number",
 			"scope": "constant.numeric",
 			"settings": {
-				"foreground": "#000"
+				"foreground": "#915b15"
 			}
 		},
 		{
 			"name": "Regexp",
 			"scope": "string.regexp",
 			"settings": {
-				"foreground": "#DC322F"
-			}
-		},
-		{
-			"name": "Variable",
-			"scope": [
-				"variable.language",
-				"variable.other"
-			],
-			"settings": {
-				"foreground": "#3d4a4e"
+				"foreground": "#a1485c"
 			}
 		},
 		{
 			"name": "Keyword",
-			"scope": "keyword",
+			"scope": [
+				"keyword",
+				"support",
+			],
 			"settings": {
 				"foreground": "#a1485c"
 			}
@@ -68,18 +55,9 @@
 			"scope": [
 				"punctuation",
 				"punctuation.definition",
-				"punctuation.definition.end.bracket.square"
 			],
 			"settings": {
-				"foreground": "#a1485b"
-			}
-		},
-		{
-			"name": "Storage",
-			"scope": "storage",
-			"settings": {
-				"fontStyle": "bold",
-				"foreground": "#586E75"
+				"foreground": "#a1485b",
 			}
 		},
 		{
@@ -133,26 +111,6 @@
 			}
 		},
 		{
-			"name": "Support.construct",
-			"scope": [
-				"support.function.construct",
-				"keyword.other.new"
-			],
-			"settings": {
-				"foreground": "#CB4B16"
-			}
-		},
-		{
-			"name": "User-defined constant",
-			"scope": [
-				"constant.character",
-				"constant.other"
-			],
-			"settings": {
-				"foreground": "#CB4B16"
-			}
-		},
-		{
 			"name": "Function argument",
 			"scope": "variable.parameter",
 			"settings": {
@@ -160,73 +118,19 @@
 			}
 		},
 		{
-			"name": "Library function",
-			"scope": "support.function",
-			"settings": {
-				"foreground": "#268BD2"
-			}
-		},
-		{
-			"name": "Library constant",
-			"scope": [
-				"support.constant",
-				"support.variable"
-			],
-			"settings": {}
-		},
-		{
 			"name": "keyword type",
 			"scope": [
 				"support.type",
 			],
 			"settings": {
-				"foreground": "#5d8f2b"
+				"foreground": "#5d8535"
 			}
-		},
-		{
-			"name": "Library variable",
-			"scope": "support.other.variable",
-			"settings": {}
 		},
 		{
 			"name": "Invalid",
 			"scope": "invalid",
 			"settings": {
 				"foreground": "#DC322F"
-			}
-		},
-		{
-			"name": "diff: header",
-			"scope": [
-				"meta.diff",
-				"meta.diff.header"
-			],
-			"settings": {
-				"fontStyle": "italic",
-				"foreground": "#268BD2"
-			}
-		},
-		{
-			"name": "diff: deleted",
-			"scope": "markup.deleted",
-			"settings": {
-				"fontStyle": "",
-				"foreground": "#DC322F"
-			}
-		},
-		{
-			"name": "diff: changed",
-			"scope": "markup.changed",
-			"settings": {
-				"fontStyle": "",
-				"foreground": "#CB4B16"
-			}
-		},
-		{
-			"name": "diff: inserted",
-			"scope": "markup.inserted",
-			"settings": {
-				"foreground": "#859900"
 			}
 		},
 		{
@@ -252,11 +156,9 @@
 	],
 	"colors": {
 		// Base
-		// "foreground": "",
 		"focusBorder": "#b49471",
 		// "contrastActiveBorder": "",
 		// "contrastBorder": "",
-		// "widget.shadow": "",
 		"input.background": "#DDD6C1",
 		// "input.border": "",
 		"input.foreground": "#586E75",
@@ -351,17 +253,14 @@
 		"editorGroupHeader.tabsBackground": "#D9D2C2",
 		// Workbench: Tabs
 		"tab.border": "#DDD6C1",
-		"tab.activeBackground": "#FDF6E3",
-		"tab.inactiveForeground": "#586E75",
-		"tab.inactiveBackground": "#D3CBB7",
+		"tab.activeBackground": "#fefbf1",
+		"tab.inactiveForeground": "#626d70",
+		"tab.inactiveBackground": "#f3eedf",
 		"tab.activeModifiedBorder": "#cb4b16",
-		// "tab.activeBackground": "",
-		// "tab.activeForeground": "",
-		// "tab.inactiveForeground": "",
 		"tab.lastPinnedBorder": "#FDF6E3",
 		// Workbench: Activity Bar
 		"activityBar.background": "#DDD6C1",
-		"activityBar.foreground": "#584c27",
+		"activityBar.foreground": "#363531",
 		"activityBarBadge.background": "#B58900",
 		// "activityBarBadge.foreground": "",
 		// Workbench: Panel
@@ -371,7 +270,7 @@
 		// "panelTitle.activeForeground": "",
 		// "panelTitle.inactiveForeground": "",
 		// Workbench: Side Bar
-		"sideBar.background": "#EEE8D5",
+		"sideBar.background": "#f3eedf",
 		"sideBarTitle.foreground": "#586E75",
 		// "sideBarSectionHeader.background": "",
 		// Workbench: Status Bar
@@ -397,9 +296,8 @@
 		"extensionButton.prominentBackground": "#b58900",
 		"extensionButton.prominentHoverBackground": "#584c27aa",
 		// Workbench: Terminal
-		// Colors sourced from the official palette http://ethanschoonover.com/solarized
 		"terminal.ansiBlack": "#073642",
-		"terminal.ansiRed": "#dc322f",
+		"terminal.ansiRed": "#a1485c",
 		"terminal.ansiGreen": "#859900",
 		"terminal.ansiYellow": "#b58900",
 		"terminal.ansiBlue": "#268bd2",
