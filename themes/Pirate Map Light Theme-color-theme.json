@@ -90,7 +90,7 @@
 			],
 			"settings": {
 				"fontStyle": "",
-				"foreground": "#6b7980"
+				"foreground": "#545458"
 			}
 		},
 		{
@@ -104,7 +104,7 @@
 			"name": "Function argument",
 			"scope": "variable.parameter",
 			"settings": {
-				"foreground": "#727171",
+				"foreground": "#685342",
 			}
 		},
 		{
