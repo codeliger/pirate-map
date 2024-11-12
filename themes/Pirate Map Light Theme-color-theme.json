@@ -90,7 +90,7 @@
 			],
 			"settings": {
 				"fontStyle": "",
-				"foreground": "#545458"
+				"foreground": "#5f432f"
 			}
 		},
 		{
@@ -104,7 +104,7 @@
 			"name": "Function argument",
 			"scope": "variable.parameter",
 			"settings": {
-				"foreground": "#685342",
+				"foreground": "#6d6d6e",
 			}
 		},
 		{
@@ -163,7 +163,8 @@
 		"inputValidation.errorBorder":"#a1485D",
 		"settings.dropdownListBorder":"#e0d8be",
 
-		"editor.background": "#fefbf1",
+		"editor.background": "#f8f5e8",
+		// "editor.background": "#fefbf1",
 		"editor.foreground": "#3d4a4e",
 
 		"editorHoverWidget.foreground": "#3d4a4e",
