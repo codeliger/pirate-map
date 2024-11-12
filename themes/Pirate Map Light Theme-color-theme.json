@@ -80,7 +80,7 @@
 			],
 			"settings": {
 				"fontStyle": "",
-				"foreground": "#357ba3"
+				"foreground": "#2173a3"
 			}
 		},
 		{
@@ -90,7 +90,7 @@
 			],
 			"settings": {
 				"fontStyle": "",
-				"foreground": "#5f432f"
+				"foreground": "#615e5e"
 			}
 		},
 		{
@@ -104,7 +104,8 @@
 			"name": "Function argument",
 			"scope": "variable.parameter",
 			"settings": {
-				"foreground": "#6d6d6e",
+				// "foreground": "#615e5e",
+				"foreground": "#554328",
 			}
 		},
 		{
@@ -113,7 +114,8 @@
 				"support.type",
 			],
 			"settings": {
-				"foreground": "#5d8535"
+				// "foreground": "#1c7477"
+				"foreground": "#3d7d56"
 			}
 		},
 		{
