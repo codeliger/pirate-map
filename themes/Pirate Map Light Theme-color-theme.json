@@ -101,6 +101,7 @@
 			"name": "keyword type",
 			"scope": [
 				"support.type",
+				"support.constant",
 			],
 			"settings": {
 				// "foreground": "#1c7477"
