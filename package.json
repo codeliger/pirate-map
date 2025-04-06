@@ -17,5 +17,8 @@
         "path": "./themes/Pirate Map Light Theme-color-theme.json"
       }
     ]
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.2"
   }
 }
