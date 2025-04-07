@@ -136,6 +136,64 @@
 				"fontStyle": "strikethrough"
 			}
 		},
+		{
+			"name": "TypeScript/JavaScript Class",
+			"scope": [
+				"entity.name.type.class.ts",
+				"entity.name.type.class.tsx",
+				"entity.name.type.class.js",
+				"entity.name.type.class.jsx"
+			],
+			"settings": {
+				"foreground": "#2173a3"
+			}
+		},
+		{
+			"name": "TypeScript/JavaScript Interface",
+			"scope": [
+				"entity.name.type.interface.ts",
+				"entity.name.type.interface.tsx"
+			],
+			"settings": {
+				"foreground": "#2173a3"
+			}
+		},
+		{
+			"name": "TypeScript/JavaScript Module",
+			"scope": [
+				"entity.name.type.module.ts",
+				"entity.name.type.module.tsx",
+				"entity.name.type.module.js",
+				"entity.name.type.module.jsx"
+			],
+			"settings": {
+				"foreground": "#175072"
+			}
+		},
+		{
+			"name": "TypeScript/JavaScript Built-in Types",
+			"scope": [
+				"support.type.builtin.ts",
+				"support.type.builtin.tsx",
+				"support.type.primitive.ts",
+				"support.type.primitive.tsx"
+			],
+			"settings": {
+				"foreground": "#3d7d56"
+			}
+		},
+		{
+			"name": "TypeScript/JavaScript Decorators",
+			"scope": [
+				"meta.decorator.ts",
+				"meta.decorator.tsx",
+				"meta.decorator.js",
+				"meta.decorator.jsx"
+			],
+			"settings": {
+				"foreground": "#83122d"
+			}
+		}
 	],
 	"colors": {
 		"activityBar.background": "#DDD6C1",
