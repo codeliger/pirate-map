@@ -20,5 +20,8 @@
   },
   "devDependencies": {
     "esbuild": "^0.25.2"
+  },
+  "dependencies": {
+    "@vscode/vsce": "^3.3.2"
   }
 }
