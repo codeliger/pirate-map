@@ -1,16 +1,16 @@
-# pirate-map README
+# Pirate Map VS Code Theme (Golang, Typescript)
 
-## Working with Markdown
+![Pirate Map](map.png)
+![Preview](preview.png)
 
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
+Ahoy, matey! Welcome to Pirate Map, a Visual Studio Code theme for those who navigate the treacherous seas of code.
 
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
+This theme be a modification of thy Solarized Light theme, but with a twist worthy of Blackbeard himself. We've plundered the treasure chest of colors and selected a palette of muted pastels - no harsh hues to send ye blind or distract ye from yer precious booty. The result be a theme that's easy on the eyes, gentle as a calm sea, without too many blasted colors to pull ye off course from yer coding treasure hunt. Arrr, may this theme serve ye well on yer digital adventures!
 
-## For more information
+## Features
 
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+* Muted Pastel Colors: A carefully selected color palette that is easy on the eyes and reduces strain during long coding sessions.
+* Solarized Light Fork: Based on the popular and time-tested Solarized Light theme.
+* Optimized for Readability: Syntax highlighting is designed to be clear and consistent, making your code easy to read and understand.
 
-**Enjoy!**
+Use the install.sh to install and test locally.
