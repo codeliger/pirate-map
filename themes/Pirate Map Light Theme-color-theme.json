@@ -4,7 +4,11 @@
 		{
 			"name": "Comment",
 			"scope": [
-				"comment"
+				"comment",
+				"comment.line.double-slash.js",
+				"comment.line.double-slash.ts",
+				"comment.block.js",
+				"comment.block.ts"
 			],
 			"settings": {
 				"fontStyle": "italic",
@@ -20,7 +24,13 @@
 				"string.quoted.double.yaml",
 				"string.quoted.double.json",
 				"string.quoted.single.java",
-				"string.quoted.double.java"
+				"string.quoted.double.java",
+				"string.quoted.single.js",
+				"string.quoted.single.ts",
+				"string.quoted.double.js",
+				"string.quoted.double.ts",
+				"string.template.js",
+				"string.template.ts"
 			],
 			"settings": {
 				"foreground": "#1c7477"
@@ -32,7 +42,9 @@
 				"constant.numeric",
 				"constant.numeric.yaml",
 				"constant.numeric.json",
-				"constant.numeric.java"
+				"constant.numeric.java",
+				"constant.numeric.js",
+				"constant.numeric.ts"
 			],
 			"settings": {
 				"foreground": "#915b15"
@@ -41,7 +53,9 @@
 		{
 			"name": "Regular Expression",
 			"scope": [
-				"string.regexp"
+				"string.regexp",
+				"string.regexp.js",
+				"string.regexp.ts"
 			],
 			"settings": {
 				"foreground": "#8d5bdd"
@@ -53,7 +67,13 @@
 				"keyword",
 				"support",
 				"keyword.control.java",
-				"keyword.other.java"
+				"keyword.other.java",
+				"keyword.control.js",
+				"keyword.control.ts",
+				"keyword.operator.new.js",
+				"keyword.operator.new.ts",
+				"keyword.operator.expression.js",
+				"keyword.operator.expression.ts"
 			],
 			"settings": {
 				"foreground": "#83122d"
@@ -85,6 +105,10 @@
 				"constant.language.json",
 				"constant.language.java",
 				"storage.type.primitive.java",
+				"support.type.primitive.js",
+				"support.type.primitive.ts",
+				"storage.type.js",
+				"storage.type.ts"
 			],
 			"settings": {
 				"foreground": "#3d7d56"
@@ -110,7 +134,19 @@
 				"punctuation.bracket.curly.java",
 				"punctuation.bracket.round.java",
 				"meta.annotation.java",
-				"punctuation.definition.annotation.java"
+				"punctuation.definition.annotation.java",
+				"punctuation.definition.string.begin.js",
+				"punctuation.definition.string.end.js",
+				"punctuation.definition.string.begin.ts",
+				"punctuation.definition.string.end.ts",
+				"punctuation.definition.template-expression.begin.js",
+				"punctuation.definition.template-expression.end.js",
+				"punctuation.definition.template-expression.begin.ts",
+				"punctuation.definition.template-expression.end.ts",
+				"punctuation.separator.comma.js",
+				"punctuation.separator.comma.ts",
+				"punctuation.terminator.js",
+				"punctuation.terminator.ts"
 			],
 			"settings": {
 				"foreground": "#8d3045"
@@ -126,6 +162,12 @@
 				"support.type.property-name.json",
 				"variable.other.java",
 				"entity.name.function.java",
+				"variable.other.js",
+				"variable.other.ts",
+				"entity.name.function.js",
+				"entity.name.function.ts",
+				"variable.language.this.js",
+				"variable.language.this.ts"
 			],
 			"settings": {
 				"foreground": "#3d4a4e"
@@ -140,6 +182,8 @@
 				"entity.name.type.module.js",
 				"entity.name.type.module.jsx",
 				"storage.modifier.java",
+				"entity.name.namespace.js",
+				"entity.name.namespace.ts"
 			],
 			"settings": {
 				"foreground": "#175072"
@@ -148,7 +192,9 @@
 		{
 			"name": "Parameter",
 			"scope": [
-				"variable.parameter"
+				"variable.parameter",
+				"variable.parameter.js",
+				"variable.parameter.ts"
 			],
 			"settings": {
 				"foreground": "#5f4b2e"
@@ -160,7 +206,9 @@
 				"meta.decorator.ts",
 				"meta.decorator.tsx",
 				"meta.decorator.js",
-				"meta.decorator.jsx"
+				"meta.decorator.jsx",
+				"punctuation.decorator.ts",
+				"punctuation.decorator.tsx"
 			],
 			"settings": {
 				"foreground": "#83122d"
@@ -169,7 +217,9 @@
 		{
 			"name": "Template Variable",
 			"scope": [
-				"variable.other.yaml"
+				"variable.other.yaml",
+				"variable.other.template.js",
+				"variable.other.template.ts"
 			],
 			"settings": {
 				"foreground": "#8d3045"
@@ -178,7 +228,9 @@
 		{
 			"name": "Invalid",
 			"scope": [
-				"invalid"
+				"invalid",
+				"invalid.illegal.js",
+				"invalid.illegal.ts"
 			],
 			"settings": {
 				"foreground": "#DC322F",
