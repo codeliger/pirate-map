@@ -6,3 +6,5 @@ node_modules
 install.sh
 ascii.py
 pnpm-lock.yaml
+map.png
+preview.png
