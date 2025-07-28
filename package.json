@@ -1,8 +1,8 @@
 {
   "name": "pirate-map",
-  "displayName": "pirate map",
+  "displayName": "Pirate Map Light Theme (Solarized Light)",
   "publisher": "codeliger",
-  "description": "solarized light pirate map theme",
+  "description": "A modified solarized light pirate map theme.",
   "version": "1.0.0",
   "engines": {
     "vscode": "^1.95.0"
