@@ -8,7 +8,9 @@
 				"comment.line.double-slash.js",
 				"comment.line.double-slash.ts",
 				"comment.block.js",
-				"comment.block.ts"
+				"comment.block.ts",
+				"comment.block.css",
+				"comment.line.double-slash.css"
 			],
 			"settings": {
 				"fontStyle": "italic",
@@ -30,7 +32,9 @@
 				"string.quoted.double.js",
 				"string.quoted.double.ts",
 				"string.template.js",
-				"string.template.ts"
+				"string.template.ts",
+				"string.quoted.double.css",
+				"string.quoted.single.css"
 			],
 			"settings": {
 				"foreground": "#1c7477"
@@ -44,7 +48,8 @@
 				"constant.numeric.json",
 				"constant.numeric.java",
 				"constant.numeric.js",
-				"constant.numeric.ts"
+				"constant.numeric.ts",
+				"constant.numeric.css"
 			],
 			"settings": {
 				"foreground": "#915b15"
@@ -73,7 +78,8 @@
 				"keyword.operator.new.js",
 				"keyword.operator.new.ts",
 				"keyword.operator.expression.js",
-				"keyword.operator.expression.ts"
+				"keyword.operator.expression.ts",
+				"keyword.control.css"
 			],
 			"settings": {
 				"foreground": "#83122d"
@@ -108,7 +114,10 @@
 				"support.type.primitive.js",
 				"support.type.primitive.ts",
 				"storage.type.js",
-				"storage.type.ts"
+				"storage.type.ts",
+				"support.constant.css",
+				"support.constant.css",
+				"support.constant.property-value.css"
 			],
 			"settings": {
 				"foreground": "#3d7d56"
@@ -146,7 +155,9 @@
 				"punctuation.separator.comma.js",
 				"punctuation.separator.comma.ts",
 				"punctuation.terminator.js",
-				"punctuation.terminator.ts"
+				"punctuation.terminator.ts",
+				"punctuation.separator.css",
+				"punctuation.terminator.css"
 			],
 			"settings": {
 				"foreground": "#8d3045"
@@ -167,7 +178,9 @@
 				"entity.name.function.js",
 				"entity.name.function.ts",
 				"variable.language.this.js",
-				"variable.language.this.ts"
+				"variable.language.this.ts",
+				"entity.name.tag.css",
+				"support.type.property-name.css"
 			],
 			"settings": {
 				"foreground": "#3d4a4e"
@@ -183,7 +196,8 @@
 				"entity.name.type.module.jsx",
 				"storage.modifier.java",
 				"entity.name.namespace.js",
-				"entity.name.namespace.ts"
+				"entity.name.namespace.ts",
+				"support.type.property-name.css",
 			],
 			"settings": {
 				"foreground": "#175072"
@@ -230,7 +244,8 @@
 			"scope": [
 				"invalid",
 				"invalid.illegal.js",
-				"invalid.illegal.ts"
+				"invalid.illegal.ts",
+				"invalid.illegal.css"
 			],
 			"settings": {
 				"foreground": "#DC322F",
