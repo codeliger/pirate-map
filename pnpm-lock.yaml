@@ -9,11 +9,11 @@ importers:
   .:
     dependencies:
       '@vscode/vsce':
-        specifier: ^3.3.2
+        specifier: ^3.6.0
         version: 3.6.0
     devDependencies:
       esbuild:
-        specifier: ^0.25.2
+        specifier: ^0.25.8
         version: 0.25.8
 
 packages:
