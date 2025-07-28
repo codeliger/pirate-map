@@ -1,6 +1,7 @@
 {
   "name": "pirate-map",
   "displayName": "pirate map",
+  "publisher": "codeliger",
   "description": "pirate map light theme",
   "version": "0.0.1",
   "engines": {
