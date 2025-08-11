@@ -283,10 +283,12 @@
 	"colors": {
 		"activityBar.background": "#DDD6C1",
 		"activityBar.foreground": "#000",
-		"activityBarBadge.foreground": "#3d4a4e",
+		"activityBarBadge.background": "#B58900",
+		"activityBarBadge.foreground": "#fefbf1",
 		"panelTitle.activeForeground": "#000",
 		"panelTitle.inactiveForeground": "#3d4a4e",
 		"badge.background": "#B58900AA",
+		"badge.foreground": "#fefbf1",
 		"button.background": "#DDD6C1",
 		"button.foreground": "#363531",
 		"debugExceptionWidget.background": "#DDD6C1",
