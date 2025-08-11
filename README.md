@@ -1,7 +1,7 @@
 # Pirate Map VS Code Theme (Golang, Typescript)
 
-![Pirate Map](./map.png)
-![Preview](./preview.png)
+![Pirate Map](./map.jpg)
+![Preview](./preview.jpg)
 
 Ahoy, matey! Welcome to Pirate Map, a Visual Studio Code theme for those who navigate the treacherous seas of code.
 
