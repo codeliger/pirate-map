@@ -20,6 +20,8 @@
     ]
   },
   "devDependencies": {
+    "@vscode/vsce": "^3.0.0",
+    "ovsx": "^0.8.3",
     "esbuild": "^0.25.8"
   },
   "repository": {
