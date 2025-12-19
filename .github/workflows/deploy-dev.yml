@@ -1,0 +1,127 @@
+name: Deploy To Dev
+
+on:
+  pull_request_target:
+    types:
+      - closed
+  workflow_dispatch:
+    inputs:
+      workflow_dispatch_version_label:
+        description: "Version type"
+        required: true
+        type: choice
+        options:
+          - major
+          - minor
+          - patch
+
+permissions:
+  contents: write
+
+jobs:
+  get_version_label:
+    if: github.event.pull_request.merged == true || github.event_name == 'workflow_dispatch'
+    uses: ./get-version-label.yml
+    with:
+      workflow_dispatch_version_label: ${{ github.event.inputs.workflow_dispatch_version_label }}
+
+  build:
+    needs: [get_version_label]
+    if: needs.get_version_label.result == 'success'
+    runs-on: ubuntu-latest
+    container: node:20-alpine
+
+    steps:
+      - name: Install git and dependencies
+        run: apk add --no-cache git openssh-client
+
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+          ref: main
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 20
+          registry-url: "https://registry.npmjs.org"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Setup Git
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+
+      - name: Get Version Label
+        id: get_version_label
+        run: echo "version_label=${{ needs.get_version_label.outputs.version_label }}" >> $GITHUB_OUTPUT
+
+      - name: NPM Version
+        run: npm version "${{ steps.get_version_label.outputs.version_label }}"
+
+      - name: Get Version
+        id: get_version
+        run: echo "version=$(node -p "require('./package.json').version")" >> $GITHUB_OUTPUT
+
+      - name: Install vsce
+        run: npm install -g @vscode/vsce
+
+      - name: Package extension
+        run: vsce package --no-dependencies
+
+      - name: Push Version
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git push origin main --follow-tags
+
+      - name: Create GitHub release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: v${{ steps.get_version.outputs.version }}
+          release_name: Release v${{ steps.get_version.outputs.version }}
+          body: |
+            Version ${{ steps.get_version.outputs.version }}
+
+            This release was automatically created from merged PR.
+          draft: false
+          prerelease: false
+
+      - name: Upload extension artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: extension-package
+          path: "*.vsix"
+
+  publish-vscode-marketplace:
+    needs: build
+    runs-on: ubuntu-latest
+    container: node:20-alpine
+
+    steps:
+      - name: Download extension artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: extension-package
+
+      - name: Publish to VS Code Marketplace
+        run: npx @vscode/vsce publish --packagePath *.vsix -p ${{ secrets.VSCE_PUBLISH_TOKEN }}
+
+  publish-openvsx:
+    needs: build
+    runs-on: ubuntu-latest
+    container: node:20-alpine
+
+    steps:
+      - name: Download extension artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: extension-package
+
+      - name: Publish to Open VSX
+        run: npx ovsx publish *.vsix -p ${{ secrets.OVSX_PUBLISH_TOKEN }}
