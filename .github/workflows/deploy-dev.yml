@@ -21,7 +21,7 @@ permissions:
 jobs:
   get_version_label:
     if: github.event.pull_request.merged == true || github.event_name == 'workflow_dispatch'
-    uses: ./get-version-label.yml
+    uses: ./.github/workflows/get-version-label.yml
     with:
       workflow_dispatch_version_label: ${{ github.event.inputs.workflow_dispatch_version_label }}
 
