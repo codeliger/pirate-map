@@ -13,4 +13,4 @@ This theme be a modification of thy Solarized Light theme, but with a twist wort
 * Solarized Light Fork: Based on the popular and time-tested Solarized Light theme.
 * Optimized for Readability: Syntax highlighting is designed to be clear and consistent, making your code easy to read and understand.
 
-Use the install.sh to install and test locally.
+Use `./vscode-install.sh` to install and test locally.

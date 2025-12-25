@@ -1,4 +1,4 @@
-name: Deploy To Dev
+name: Create Release
 
 on:
   pull_request_target:
@@ -75,24 +75,20 @@ jobs:
           git push origin main --follow-tags
 
       - name: Create GitHub release
-        uses: actions/create-release@v1
+        uses: softprops/action-gh-release@v2
+        if: github.ref_type == 'tag'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           tag_name: v${{ steps.get_version.outputs.version }}
-          release_name: Release v${{ steps.get_version.outputs.version }}
+          name: Release v${{ steps.get_version.outputs.version }}
           body: |
             Version ${{ steps.get_version.outputs.version }}
-
             This release was automatically created from merged PR.
           draft: false
           prerelease: false
-
-      - name: Upload extension artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: extension-package
-          path: "*.vsix"
+          files: |
+            *.vsix
 
   publish-vscode-marketplace:
     needs: build
